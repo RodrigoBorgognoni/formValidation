@@ -1,4 +1,4 @@
-## <p align="center">Formulário de criação de contas para o banco virtual MoniBank.</p>
+ <h2 align="center">Formulário de criação de contas para o banco virtual MoniBank.</h2>
 
 ## Tecnologias utilizadas durante o curso
 * JavaScript
@@ -7,8 +7,8 @@
 * HTML
 * CSS
 
-# Validação de Formulários
-<hr>
+## Validação de Formulários
+
 * Saiba como aplicar atributos de validação de formulário com HTML5
 * Construa validações para os dígitos verificadores do CPF
 * Implemente validações de maioridade a partir da comparação de datas
