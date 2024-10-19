@@ -16,6 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/formulario/styles.css">
+    <script src="../js/main.js" type="module" defer></script>
 </head>
 
 <body>
@@ -77,10 +78,10 @@
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}\-?\d{2}\" />
+                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?d{2}"/>
                     <!--
                         EXPRESSÃO REGULAR:
-                        
+
                         \d{3}\ -> encontra número [0-9] por três vezes
                         \d{2}\ -> encontra número [0-9] por duas vezes
                         .? -> ponto opcional
