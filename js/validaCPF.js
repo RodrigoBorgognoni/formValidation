@@ -12,9 +12,11 @@ export default function validaCpf(campo) {
 
     */
     const cpf = campo.value.replace(/\.|-/g, '');
-    validaNumerosRepetidos(cpf);
-    primeiroDigito(cpf);
-    console.log(primeiroDigito(cpf));
+    if (validaNumerosRepetidos(cpf) || primeiroDigito(cpf) || segundoDigito(cpf)){
+        console.log("CPF NÃO EXISTE")
+    }else {
+        console.log("CPF EXISTE")
+    }
 }
 
 function validaNumerosRepetidos(cpf) {
@@ -54,4 +56,21 @@ function primeiroDigito(cpf) {
     }
 
     return soma != cpf[9]; // return 8 != 8; FALSE
+}
+
+function segundoDigito(cpf) {
+    let soma = 0;
+    let multiplicador = 11;
+
+    for (let i = 0; i < 10; i++) {
+        soma += cpf[i] * multiplicador;
+        multiplicador--;
+    }
+
+    soma = (soma * 10) % 11;
+    if (soma == 10 || soma == 11) {
+        soma = 0;
+    }
+
+    return soma != cpf[10];
 }
