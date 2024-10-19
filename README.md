@@ -2,15 +2,12 @@
 
 ## Tecnologias utilizadas durante o curso
 * JavaScript
-<hr>
 
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
-<hr>
 
 ## Validação de Formulários
-<hr>
 
 * Saiba como aplicar atributos de validação de formulário com HTML5
 * Construa validações para os dígitos verificadores do CPF
