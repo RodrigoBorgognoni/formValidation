@@ -21,4 +21,4 @@
 ## Regex e Expressões regulares
 
 Para entender melhor sobre a criação de expressões regulares e regex:
-* <a href="https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex" target="_blank" rel="noopener">“JavaScript replace: manipulando Strings e regex</a>
+* <a href="https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex" target="_blank" rel="noopener">JavaScript replace: manipulando Strings e regex</a>

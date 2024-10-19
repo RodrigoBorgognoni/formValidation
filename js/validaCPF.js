@@ -13,7 +13,8 @@ export default function validaCpf(campo) {
     */
     const cpf = campo.value.replace(/\.|-/g, '');
     validaNumerosRepetidos(cpf);
-    console.log(validaNumerosRepetidos(cpf));
+    primeiroDigito(cpf);
+    console.log(primeiroDigito(cpf));
 }
 
 function validaNumerosRepetidos(cpf) {
@@ -30,5 +31,27 @@ function validaNumerosRepetidos(cpf) {
         '99999999999',
     ];
 
-    return numerosRepetidos.includes(cpf)
+    return numerosRepetidos.includes(cpf);
+}
+
+function primeiroDigito(cpf) {
+    let soma = 0;
+    let multiplicador = 10;
+
+    for (let i = 0; i < 9; i++) {
+        soma += cpf[i] * multiplicador;
+        multiplicador--;
+        /* 
+        CPF 937777040-83
+        cpf[0] = 9, cpf[1] = 3, cpf[2] = 7 etc
+        soma = 311
+        */
+    }
+
+    soma = (soma * 10) % 11; //soma = (311 * 10) % 11; soma = 8
+    if (soma == 10 || soma == 11) {
+        soma = 0;
+    }
+
+    return soma != cpf[9]; // return 8 != 8; FALSE
 }
