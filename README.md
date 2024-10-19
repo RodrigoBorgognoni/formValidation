@@ -7,8 +7,8 @@
 * HTML
 * CSS
 
-## Validação de Formulários
-
+# Validação de Formulários
+<hr>
 * Saiba como aplicar atributos de validação de formulário com HTML5
 * Construa validações para os dígitos verificadores do CPF
 * Implemente validações de maioridade a partir da comparação de datas
