@@ -3,12 +3,10 @@
     <img src="https://github.com/user-attachments/assets/0df0ba85-9d86-4a32-822e-c8cf5bc11091">
 </p>
 
-## Tecnologias utilizadas durante o curso
-* JavaScript
-
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
+* JavaScript
 
 ## Validação de Formulários
 
