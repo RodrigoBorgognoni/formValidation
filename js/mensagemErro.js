@@ -1,6 +1,12 @@
-const tiposErro = ['customError', 'tooShort', 'typeMismatch', 'valueMissing', 'patternMismatch'];
+export const tiposErro = [
+    'valueMissing', 
+    'typeMismatch', 
+    'patternMismatch',
+    'tooShort',
+    'customError'
+];
 
-const mensagens = {
+export const mensagens = {
     nome: {
         valueMissing: 'Nome não pode estar vazio.',
         patternMismatch: 'Por favor, preencha um nome válido.',
@@ -30,7 +36,3 @@ const mensagens = {
         valueMissing: 'Você deve aceitar nossos termos antes de continuar.',
     },
 };
-
-export const mensagemErro = [
-    tiposErro, mensagens
-]
