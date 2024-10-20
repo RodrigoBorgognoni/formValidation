@@ -11,6 +11,7 @@ camposForm.forEach((campo) => {
 });
 
 function verificaCampo(campo) {
+    campo.setCustomValidity('');
     
     if (campo.name == 'cpf' && campo.value.length >= 11) {
         validaCpf(campo);
@@ -20,6 +21,7 @@ function verificaCampo(campo) {
     }
     
     let mensagem = '';
+
     tiposErro.forEach(erro => {
         if (campo.validity[erro]) {
             mensagem = mensagens[campo.name][erro];

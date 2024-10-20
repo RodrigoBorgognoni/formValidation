@@ -13,7 +13,7 @@ export default function validaCpf(campo) {
     */
     const cpf = campo.value.replace(/\.|-/g, '');
     if (validaNumerosRepetidos(cpf) || primeiroDigito(cpf) || segundoDigito(cpf)) {
-        campo.setCustomValidity('CPF Inválido');
+        campo.setCustomValidity('Esse cpf não é válido');
     }
 }
 
