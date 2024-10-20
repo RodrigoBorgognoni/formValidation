@@ -22,3 +22,7 @@
 
 Para entender melhor sobre a criação de expressões regulares e regex:
 * <a href="https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex" target="_blank" rel="noopener">JavaScript replace: manipulando Strings e regex</a>
+
+ <p align="center">
+    <img src="https://github.com/user-attachments/assets/b6760899-505f-4a51-ac9a-1c978052a610">
+</p>
