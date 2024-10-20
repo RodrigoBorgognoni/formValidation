@@ -30,7 +30,7 @@ function validaNumerosRepetidos(cpf) {
         '66666666666',
         '77777777777',
         '88888888888',
-        '99999999999',
+        '99999999999'
     ];
 
     return numerosRepetidos.includes(cpf);
