@@ -3,6 +3,21 @@ import maiorIdade from './validaIdade.js';
 import { tiposErro, mensagens } from './mensagemErro.js';
 
 const camposForm = document.querySelectorAll('[required]');
+const form = document.querySelector('[data-formulario]')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const list = {
+        "nome": e.target.elements["nome"].value,
+        "email": e.target.elements["email"].value,
+        "rg": e.target.elements["rg"].value,
+        "cpf": e.target.elements["cpf"].value,
+        "aniversario": e.target.elements["aniversario"].value
+    }
+
+    localStorage.setItem('cadastro', JSON.stringify(list));
+    window.location.href = './abrir-conta-form-2.html';
+})
 
 camposForm.forEach((campo) => {
     campo.addEventListener('blur', () => verificaCampo(campo));
